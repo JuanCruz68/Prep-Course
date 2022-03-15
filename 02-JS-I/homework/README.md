@@ -1,3 +1,4 @@
+
 # Homework: Introducción a Javascript
 
 ---
@@ -10,7 +11,7 @@
  * Strings
  * Funciones (argumentos, `return`)
  * Declaraciones `if`
- * Valores booleanos (`true`, `false`)
+ * Valores booleanos (`true`, `false`)   
 
 2. Instalar Node y NPM. NPM se incluye con Node. <https://nodejs.org/en/download/>
 
