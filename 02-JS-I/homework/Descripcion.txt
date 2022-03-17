@@ -1,0 +1,7 @@
+Un string se coloca entre "" y es un mensaje.
+La valiable numerica es un simple numero, sin comillas.
+Las variables booleanas son "true" o "false".
+Math.pow(num, 2); eleva al cuadrado, (3) al cubo, etc
+Math.round redondea un número con coma al numero entero más cercano (5.2 = 5)
+Math.ceil redondea al entero próximo (5.2 = 6)
+Math.random [
