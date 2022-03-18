@@ -3,33 +3,51 @@
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
+  // array.length === 3
+  // var array = [2, "asd", true] (puede tener cualquier elemento, numérico, string, booleano)
+  //              0    1     2
+  // empieza a contar desde 0
+  return array[0];
 }
 
 
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
+  return array [array.length -1];
 }
 
 
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
+  return array.length;
 }
 
-
+//  0  1  2   3
+// [1, 2, 5, 132]   tiene que dar:
+// [2, 3, 6, 133]
 function incrementarPorUno(array) {
   // "array" debe ser una matriz de enteros (int/integers)
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
+  var arrayAumentado = [];
+  for (var i = 0; i < array.length; i++){
+    arrayAumentado.push(array[i] + 1) 
+  }
+  return arrayAumentado;
 }
 
+//var array = ["pepe", "pajaro", "alfajor"]
+//var elemento = "coca-cola"; "coca-cola" se tiene que agregar al final del array[]
 
 function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
+ array.push(elemento);
+ return array; 
 }
 
 
@@ -38,8 +56,11 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
+  array.unshift(elemento);
+  return array;
 }
 
+// .join = juntar las palabras. (' ') con un espacio entre medio
 
 function dePalabrasAFrase(palabras) {
   // "palabras" es un array de strings/cadenas
@@ -47,13 +68,21 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
+  return palabras.join(' ');
 }
 
-
+// array[1, 2, 3, 4, 5]
+// elemento       4
 function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
+  for(var i = 0; i < array.length; i++){
+    if(array[i] === elemento){
+      return true;
+    }
+  }
+  return false;
 }
 
 
@@ -61,6 +90,11 @@ function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
+  var total = 0;
+  for(var i = 0; i < numero.length; i++){
+    total += numeros[i];
+  }
+  return total;
 }
 
 
